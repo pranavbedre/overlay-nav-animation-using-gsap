@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: #8000ff;
+  font-family: "Poppins", sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  a {
+    text-decoration: none;
+  }
+}
+
+h1 {
+  font-size: 5rem;
+  width: 40%;
+  margin-left: 2em;
+  margin-top: 3.5em;
+}
+
+section,
+header {
+  width: 70%;
+  margin: 0 auto;
+  color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  nav ul {
+    display: flex;
+
+    a {
+      padding: 2.5em 1.5em;
+      display: block;
+    }
+    li.active a {
+      font-weight: bold;
+      background: white;
+      color: black;
+      margin-left: 2em;
+      padding: 2.5em;
+    }
+  }
+  a {
+    color: white;
+    text-decoration: none;
+    padding: 2em;
+  }
+
+  a.logo {
+    font-weight: bold;
+    font-size: 1.25rem;
+    padding: 0;
+  }
+}
+
+.overlay {
+  position: fixed;
+  height: 100vh;
+  background: white;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 75% auto 6em;
+  transform: translateX(100px);
+  pointer-events: none;
+  opacity: 0;
+}
+
+.stagger {
+  transform: translateX(10%);
+  opacity: 0;
+}
+
+.left,
+.right,
+.middle {
+  height: 100vh;
+}
+
+h2 {
+  color: #8000ff;
+  font-size: 5rem;
+}
+
+.left {
+  padding: 8em 10em;
+
+  p.subhead {
+    color: black;
+    font-size: 1.5rem;
+    margin-top: -0.5rem;
+  }
+}
+
+.middle {
+  ul li:nth-child(1) {
+    margin-top: 10em;
+  }
+
+  ul li {
+    font-size: 1.2rem;
+    display: block;
+    margin-top: 1.5em;
+  }
+}
+
+.right {
+  height: 100vh;
+  width: 100%;
+  background: #8000ff;
+  a {
+    display: block;
+    color: white;
+    margin: auto;
+    width: 30%;
+  }
+}
+
+.cards {
+  margin-top: 3.5em;
+  display: flex;
+  gap: 2em;
+
+  .card {
+    box-shadow: 15px 15px 53px rgba(128, 0, 255, 0.11);
+    border-radius: 0.5em;
+    padding: 2em;
+
+    .cta {
+      padding: 0.5em 1em;
+      border-radius: 0.3em;
+      text-decoration: none;
+      background: #8000ff;
+      margin-top: 1em;
+      display: inline-block;
+      color: white;
+      font-weight: bold;
+    }
+
+    .cta-pay-once {
+      background: #ead5ff;
+      color: #3f007e;
+    }
+  }
+}

@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: #8000ff;
+  font-family: "Poppins", sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 5rem;
+  width: 40%;
+  margin-left: 2em;
+  margin-top: 3.5em;
+}
+
+section,
+header {
+  width: 70%;
+  margin: 0 auto;
+  color: white;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header nav ul a {
+  padding: 2.5em 1.5em;
+  display: block;
+}
+
+header nav ul li.active a {
+  font-weight: bold;
+  background: white;
+  color: black;
+  margin-left: 2em;
+  padding: 2.5em;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  padding: 2em;
+}
+
+header a.logo {
+  font-weight: bold;
+  font-size: 1.25rem;
+  padding: 0;
+}
+
+.overlay {
+  position: fixed;
+  height: 100vh;
+  background: white;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 75% auto 6em;
+      grid-template-columns: 75% auto 6em;
+  -webkit-transform: translateX(100px);
+          transform: translateX(100px);
+  pointer-events: none;
+  opacity: 0;
+}
+
+.stagger {
+  -webkit-transform: translateX(10%);
+          transform: translateX(10%);
+  opacity: 0;
+}
+
+.left,
+.right,
+.middle {
+  height: 100vh;
+}
+
+h2 {
+  color: #8000ff;
+  font-size: 5rem;
+}
+
+.left {
+  padding: 8em 10em;
+}
+
+.left p.subhead {
+  color: black;
+  font-size: 1.5rem;
+  margin-top: -0.5rem;
+}
+
+.middle ul li:nth-child(1) {
+  margin-top: 10em;
+}
+
+.middle ul li {
+  font-size: 1.2rem;
+  display: block;
+  margin-top: 1.5em;
+}
+
+.right {
+  height: 100vh;
+  width: 100%;
+  background: #8000ff;
+}
+
+.right a {
+  display: block;
+  color: white;
+  margin: auto;
+  width: 30%;
+}
+
+.cards {
+  margin-top: 3.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2em;
+}
+
+.cards .card {
+  -webkit-box-shadow: 15px 15px 53px rgba(128, 0, 255, 0.11);
+          box-shadow: 15px 15px 53px rgba(128, 0, 255, 0.11);
+  border-radius: 0.5em;
+  padding: 2em;
+}
+
+.cards .card .cta {
+  padding: 0.5em 1em;
+  border-radius: 0.3em;
+  text-decoration: none;
+  background: #8000ff;
+  margin-top: 1em;
+  display: inline-block;
+  color: white;
+  font-weight: bold;
+}
+
+.cards .card .cta-pay-once {
+  background: #ead5ff;
+  color: #3f007e;
+}
+/*# sourceMappingURL=styles.css.map */
